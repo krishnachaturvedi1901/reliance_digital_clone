@@ -66,7 +66,7 @@
     width: 150px;
     height: 50px;
 }
-#ctegry_list{
+#ctegry_list,#navbaar_top_on_another_page{
     background: #003380;
     display: flex;
     justify-content: space-between;
@@ -75,7 +75,7 @@
     padding: 0 2%;
     list-style: none;
 }
-#ctegry_list>li{
+#ctegry_list>li,#navbaar_top_on_another_page>li{
     padding: 10px 0.6vw;
 }
 #ctegry_list a{
@@ -186,6 +186,20 @@ h1{
    font-weight: 600;
    font-family: Roboto,"system-ui",sans-serif;
 }
+#navbaar_top_on_another_page li{
+    color: white;
+    font-family: Roboto,"system-ui",sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+#navbaar_top_on_another_page{
+    background-color: #e42529;
+    border-bottom: 0.5PX soliD white;
+    z-index: 15;
+}
+#home_page_user_name{
+    display: none;
+}
 @media only screen and (max-width: 739px) {
       #nav_serchbaar_div{
         flex-direction: column;
@@ -202,7 +216,12 @@ h1{
         align-items: center;
         display: none;
       }
-      #find_store_list{
-        display: none;
+      #find_store_list,#navbaar_top_on_another_page{
+        position: fixed;
+        bottom: 0;
+        background-color: #e42529;
+        width: 100%;
+        justify-content: center;
+        /* display: none; */
       }
   }

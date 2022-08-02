@@ -13,6 +13,36 @@ function navtop(){
     </li>
   </ul>`
 }
+function NEW_NAVTOP(){
+      return `<ul id="navbaar_top_on_another_page">
+      <li>
+       OUR BRAND PROMISE
+      </li>
+      <li>
+       <i class="fa-solid fa-arrow-right-arrow-left"></i>
+       EASY RETURN
+      </li>
+      <li>
+       <i class="fa-solid fa-truck"></i>
+       NEXT DAY DELIVERY
+      </li>
+      <li>
+       <i class="fa-solid fa-q"></i>
+       SERVICE GUARANTEE
+      </li>
+      <li>
+       <i class="fa-solid fa-diagram-project"></i>
+        UNMATCHED NETWORK
+      </li>
+      <li>
+           <i class="fa-solid fa-location-dot"></i>
+           FIND A STORE
+       </li>
+      <li>
+       CONTACT US
+       </li>
+  </ul>`
+}
 function main_navbaar(){
     return`<!-- logo and seach baar and cart and login -->
     <div id="nav_serchbaar_div">
@@ -35,9 +65,15 @@ function main_navbaar(){
              </a>
          </li>
          <li>
-             <a href="#">
+             <a href="login_signup.html">
                  <i class="fa-solid fa-user"></i>
                  Login
+             </a>
+         </li>
+         <li id="home_page_user_name">
+             <a href="user_profile.html">
+                 <i class="fa-solid fa-user"></i>
+                 Arvind Maurya
              </a>
          </li>
        </ul>
@@ -986,4 +1022,4 @@ function main_navbaar(){
       </ul>
     </div>`
 }
-export {navtop,main_navbaar};
+export {navtop,main_navbaar,NEW_NAVTOP};
