@@ -161,7 +161,7 @@ let flag = false;
 
 let showMorefec = ()=>{
     hidden_feature .style.display = "block";
-    seemore_feature.style.display = "none"
+    seemore_feature.style.display = "none";
 }
 let hiddenMorefec = () =>{
     hidden_feature.style.display = "none";
@@ -171,6 +171,7 @@ let hiddenMorefec = () =>{
 let showClick = () =>{
     if(flag==false){
         feature_view.style.display = "block";
+        seemore_feature.style.display = "block";
         let current_rotation = -180;
         feature_down.style.transform = 'rotate(' + current_rotation + 'deg)'
         flag = true;
@@ -178,6 +179,7 @@ let showClick = () =>{
         feature_view.style.display = "none";
         let current_rotation = 0;
         feature_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        hidden_feature.style.display = "none";
         flag = false;
     }
     
@@ -213,11 +215,13 @@ let hiddenMoretvops = () =>{
 let showClicktvops = () =>{
     if(flag1==false){
         tvops_view.style.display = "block";
+        seemore_tvops.style.display = "block";
         let current_rotation = -180;
         tvops_down.style.transform = 'rotate(' + current_rotation + 'deg)'
         flag1 = true;
     }else{
         tvops_view.style.display = "none";
+        hidden_tvops.style.display = "none";
         let current_rotation = 0;
         tvops_down.style.transform = 'rotate(' + current_rotation + 'deg)'
         flag1 = false;
@@ -255,11 +259,13 @@ let hiddenMoreHDMI = () =>{
 let showClickHDMI = () =>{
     if(flag2==false){
         HDMI_view.style.display = "block";
+        seemore_HDMI.style.display = "block";
         let current_rotation = -180;
         HDMI_down.style.transform = 'rotate(' + current_rotation + 'deg)'
         flag2 = true;
     }else{
         HDMI_view.style.display = "none";
+        hidden_HDMI.style.display = "none";
         let current_rotation = 0;
         HDMI_down.style.transform = 'rotate(' + current_rotation + 'deg)'
         flag2 = false;
@@ -271,6 +277,7 @@ seemore_HDMI.addEventListener('click',showMoreHDMI);
 seeless_HDMI.addEventListener('click',hiddenMoreHDMI);
 click_HDMI.addEventListener('click',showClickHDMI);
 // <-----------------HDMI end---------------->
+
 // <------------------no of USB-------------->
 let click_noUSB = document.querySelector('.click_noUSB');
 let noUSB_view = document.querySelector('.noUSB_view');
@@ -293,6 +300,99 @@ let showClicknoUSB = () =>{
 
 click_noUSB.addEventListener('click',showClicknoUSB);
 // <----------end no of USB----------------->
+
+
+// <-------------Display Tech------------->
+
+let click_tech = document.querySelector('.click_tech');
+let tech_view = document.querySelector('.tech_view');
+let tech_down = document.querySelector('.tech_down');
+let flag4 = false;
+let showClicktech = () =>{
+    if(flag4==false){
+        tech_view.style.display = "block";
+        let current_rotation = -180;
+        tech_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        flag4 = true;
+    }else{
+        tech_view.style.display = "none";
+        let current_rotation = 0;
+        tech_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        flag4 = false;
+    }
+}
+
+
+click_tech.addEventListener('click',showClicktech);
+
+// <----------------------Display Tech End----------->
+
+// <-------------------------display type------------------->
+let click_dtype = document.querySelector('.click_dtype');
+let seemore_dtype = document.querySelector('.seemore_dtype');
+let seeless_dtype = document.querySelector('.seeless_dtype');
+let hidden_dtype = document.querySelector('.hidden_dtype');
+let dtype_view = document.querySelector('.dtype_view');
+let dtype_down = document.querySelector('.dtype_down');
+let flag5 = false;
+
+let showMoredtype = ()=>{
+    hidden_dtype.style.display = "block";
+    seemore_dtype.style.display = "none"
+}
+let hiddenMoredtype = () =>{
+    hidden_dtype.style.display = "none";
+    seemore_dtype.style.display = "block";
+}
+
+let showClickdtype = () =>{
+    if(flag5==false){
+        dtype_view.style.display = "block";
+        seemore_dtype.style.display = "block";
+        let current_rotation = -180;
+        dtype_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        flag5 = true;
+    }else{
+        dtype_view.style.display = "none";
+        hidden_dtype.style.display = "none";
+        let current_rotation = 0;
+        dtype_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        flag5 = false;
+    }
+    
+
+}
+seemore_dtype.addEventListener('click',showMoredtype);
+seeless_dtype.addEventListener('click',hiddenMoredtype);
+click_dtype.addEventListener('click',showClickdtype);
+
+// <-------------------------display type end----------------------->
+
+// <--------------------------display size--------------------------->
+let click_size = document.querySelector('.click_size');
+let size_view = document.querySelector('.size_view');
+let size_down = document.querySelector('.size_down');
+let flag6 = false;
+let showClicksize = () =>{
+    if(flag6==false){
+        size_view.style.display = "block";
+        let current_rotation = -180;
+        size_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        flag6 = true;
+    }else{
+        size_view.style.display = "none";
+        let current_rotation = 0;
+        size_down.style.transform = 'rotate(' + current_rotation + 'deg)'
+        flag6 = false;
+    }
+}
+
+
+click_size.addEventListener('click',showClicksize);
+
+
+// <--------------------------displaysize end----------------------->
+
 
 
 window.addEventListener('load',teldData)

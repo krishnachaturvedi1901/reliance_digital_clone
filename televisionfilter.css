@@ -21,7 +21,7 @@
 /* <------------------- after animation telepart---------------> */
 
 #tel_allshow{
-margin-top: 30px;
+ margin-top: 30px;
  width: 100%;
  border: 2px solid red;
  display: grid;
@@ -260,7 +260,8 @@ text-decoration: line-through;
     background-color: transparent;
 
 }
-.brand_hidden,.brand_more,.seemore_discount,.seeless_discount,.seeless_feature,.seemore_feature,.seemore_tvops,.seeless_tvops,.seemore_HDMI,.seeless_HDMI{
+.brand_hidden,.brand_more,.seemore_discount,.seeless_discount,
+.seeless_feature,.seemore_feature,.seemore_tvops,.seeless_tvops,.seemore_HDMI,.seeless_HDMI,.seemore_dtype,.seeless_dtype{
     color: blue;
     cursor: pointer;
     padding: 5px 0px 30px 0px;
@@ -366,12 +367,81 @@ text-decoration: line-through;
     transition: transform 0.5s;
 }
 
-
-
-
-
 /* <------------------end no of USB-----------> */
 
+/* <--------display tech-------> */
+.filter_tech{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tech_view{
+    display: none;
+}
+.tech_down{
+    transition: transform 0.5s;
+}
+/* <------display tech end------> */
+
+/* <------------------display type-----------> */
+.filter_dtype{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_dtype{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden_dtype{
+    display: none;
+}
+.dtype_view{
+    display: none;
+}
+.dtype_down{
+    transition: transform 0.5s;
+}
+
+
+/* <---------------display type end--------------> */
+
+/* <--------------------display size------------------> */
+
+.filter_size{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.click_size{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.size_view{
+    display: none;
+}
+.size_down{
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+/* <---------------------------display size end---------------> */
 
 
 /* <-------------information part-----------> */
