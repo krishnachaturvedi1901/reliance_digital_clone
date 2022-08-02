@@ -1,0 +1,46 @@
+#productGrid{
+    max-width: 382px;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#productGrid img{
+    max-width: 180px;
+    max-height: 180px;
+    margin: auto;
+}
+#image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#priceDiv{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    gap: 5px;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+}
+#btnDiv{
+    display: flex;
+    width:100%;
+    gap :10px;
+    justify-content: center;
+}
+#btnDiv > div {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* border: 1px solid rgb(240, 240, 240); */
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+
+
