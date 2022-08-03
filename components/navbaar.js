@@ -75,6 +75,34 @@ function main_navbaar(){
              <a id="home_page_user_name_text" href="user_profile.html">
                  Arvind Maurya
              </a>
+             <div id="nav_account_div">
+                    <div id="triingle">
+            
+                    </div>
+                    <ul id="nav_account_div_list">
+                       <li>
+                           <a href="user_profile.html">My Profile</a>
+                       </li>
+                       <li>
+                           <a href="user_order.html">My Orders</a>
+                       </li>
+                       <li>
+                           <a href="#">My Address</a>
+                       </li>
+                       <li>
+                           <a href="#">My Wishlist</a>
+                       </li>
+                       <li>
+                           <a href="#">ROne Loyelty Points</a>
+                       </li>
+                       <li>
+                           <a href="#">My Credits</a>
+                       </li>
+                       <li id="nav_user_logout_button">
+                           <a href="#">Logout</a>
+                       </li>
+                    </ul> 
+               </div>
          </li>
        </ul>
     </div>
