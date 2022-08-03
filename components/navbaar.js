@@ -64,15 +64,15 @@ function main_navbaar(){
                  Cart
              </a>
          </li>
-         <li>
+         <li id="signup_login_On_nav">
              <a href="login_signup.html">
                  <i class="fa-solid fa-user"></i>
                  Login
              </a>
          </li>
          <li id="home_page_user_name">
-             <a href="user_profile.html">
-                 <i class="fa-solid fa-user"></i>
+             <i class="fa-solid fa-user"></i>
+             <a id="home_page_user_name_text" href="user_profile.html">
                  Arvind Maurya
              </a>
          </li>
@@ -1022,4 +1022,23 @@ function main_navbaar(){
       </ul>
     </div>`
 }
-export {navtop,main_navbaar,NEW_NAVTOP};
+const getData = async(url)=>{
+    try {
+       let res = await fetch(url);
+       let data = await res.json(); 
+       return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+const show_uersIn_nav = (user)=>{
+    let pincodeElimnet = document.getElementById("register_pincode");
+    pincodeElimnet.innerText = `Deliver to ${user.city}` 
+    let signup_login_On_naveliment = document.getElementById("signup_login_On_nav");
+    signup_login_On_naveliment.style.display = "none"
+    let home_page_user_name_textEliment = document.getElementById("home_page_user_name_text");
+    let home_page_user_name_eliment = document.getElementById("home_page_user_name");
+    home_page_user_name_eliment.style.display = "block"
+    home_page_user_name_textEliment.innerText = user.name
+}
+export {navtop,main_navbaar,NEW_NAVTOP,getData,show_uersIn_nav};

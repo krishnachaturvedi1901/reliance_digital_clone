@@ -199,7 +199,12 @@ h1{
 }
 #home_page_user_name{
     display: none;
+    color: white;
 }
+#navbaar_top_on_another_page>li:nth-child(even){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
 @media only screen and (max-width: 739px) {
       #nav_serchbaar_div{
         flex-direction: column;
@@ -223,5 +228,12 @@ h1{
         width: 100%;
         justify-content: center;
         /* display: none; */
+      }
+      #navbaar_top_on_another_page>li:nth-child(odd){
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+      }
+      #navbaar_top_on_another_page>li:nth-child(even){
+        display: none;
       }
   }

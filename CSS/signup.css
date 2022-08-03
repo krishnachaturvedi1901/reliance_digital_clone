@@ -142,16 +142,22 @@ input:focus{
 #sighnupOtpSubmitButton,.signupotp{
     display: none;
 }
-/* #mainsighun_llogindiv{
-    display: none;
-} */
-#mainregisteration_div{
+#mainregisteration_div{   
     display: none;
 }
 @media only screen and (max-width: 857px) {
     #mainsighun_llogindiv{
         display: flex;
         flex-direction: column;
+    }
+    #mainregisteration_div{
+        width: 80%;
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    #mainregisteration_div{
+        width: 100%;
     }
     
 }

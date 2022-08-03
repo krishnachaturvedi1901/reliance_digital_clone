@@ -1,7 +1,11 @@
-import {navtop,main_navbaar,NEW_NAVTOP} from "../components/navbaar.js"
+import {navtop,main_navbaar,NEW_NAVTOP,getData} from "../components/navbaar.js"
 let navtopelimet = document.getElementById("top_find_store_div").innerHTML = NEW_NAVTOP();
 let navbaarelimet = document.getElementById("navbaar_div");
 navbaarelimet.innerHTML = main_navbaar();
+//footer 
+import {footer} from "../components/footer.js"
+let footerEliment = document.getElementById("hp13");
+footerEliment.innerHTML = footer();
 //signup eliment
 let registerEliment = document.getElementById("mainregisteration_div");
 let register_first_nameEliment = document.getElementById("register_first_name");
@@ -18,31 +22,26 @@ let register_city_nameEliment = document.getElementById("register_city_name");
 let input_numberElement = document.getElementById("login_signup_input_number");
 let login_diveEliment = document.getElementById("mainsighun_llogindiv");
 let login_otp_elimet = document.getElementById("login_otp_button_div_input");
+// console.log(login_otp_elimet);
+let inter_your_otp_lableEliment = document.getElementById("inter_your_otp_lable");
+let Enter_your_mobile_lableEliment = document.getElementById("Enter_your_mobile_lable");
 let login_otp_submit_btn = document.getElementById("login_otp_button_div");
 let check_login_availble_button_elimet = document.getElementById("check_login_availble_button");
 //api url
 
 document.getElementById("register_pincode").style.display = "none"
-let url = `http://localhost:3000/profile`
-
-const getData = async()=>{
-    try {
-       let res = await fetch(url);
-       let data = await res.json(); 
-       return data;
-    } catch (error) {
-        console.log(error);
-    }
-}
 
 
 
-//login all function
+
+
+// login all function
 const matchOtp = (number,obj)=>{
 let userOtpInput = login_otp_elimet.value;
 if(number==userOtpInput){
     alert("login succsessfull")
     localStorage.setItem("usersData",JSON.stringify(obj));
+    location.href = 'user_profile.html'
 }
 else{
     alert("wrong otp");
@@ -50,17 +49,21 @@ else{
 }
 const goto_otp_verification = (ele)=>{
    let ran_number = Math.floor(Math.random()*9999)+1000;
-   alert(ran_number);
-   login_otp_elimet.style.display = "block"
-   login_otp_submit_btn.style.display = "block"
-   input_numberElement.style.display = "none"
-   check_login_availble_button_elimet.style.display = "none"
-   matchOtp(ran_number,ele);
+   alert(`Your Login OTP is : ${ran_number}`);
+   inter_your_otp_lableEliment.style.display = "block";
+   login_otp_elimet.style.display = "block";
+   login_otp_submit_btn.style.display = "block";
+   input_numberElement.style.display = "none";
+   Enter_your_mobile_lableEliment.style.display = "none";
+   check_login_availble_button_elimet.style.display = "none";
+   login_otp_submit_btn.addEventListener("click",()=>{
+     matchOtp(ran_number,ele)
+   })
 }
 // register user functions
 const postData_toserver = async(obj)=>{
-
    try {
+    let url = `http://localhost:3000/profile`
      let res = await fetch(url,{
         method:"POST",
         body:JSON.stringify(obj),
@@ -92,7 +95,7 @@ const Go_otp_varification = (obj)=>{
     })
 }
 const getData_and_saveToserver = (number)=>{
-   let name = `${register_first_nameEliment.value} ${register_last_nameEliment}`
+   let name = `${register_first_nameEliment.value} ${register_last_nameEliment.value}`
    let email = register_email_eliment.value;
    let city = register_city_nameEliment.value;
    if(name!=""&&email!=""){
@@ -134,7 +137,7 @@ const checkToLoginServer = async()=>{
     try {
         let input_number = input_numberElement.value;
         if(input_number.length==10){
-            let data = await getData();
+            let data = await getData(`http://localhost:3000/profile`);
             checkDatabase(input_number,data);
         }else{
             alert("wrong mobile number")
