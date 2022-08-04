@@ -18,6 +18,7 @@
 }
 
 
+
 /* <------------------- after animation telepart---------------> */
 
 #tel_allshow{
@@ -228,7 +229,12 @@ text-decoration: line-through;
 }
 .filter_price{
     border-bottom: 1px solid #ccc;
-    padding-left: 20px;
+    padding: 0px 20px 20px 20px;
+}
+#slider{
+    border:2px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    height: 12px;
 }
 .filter_brand{
     border-bottom: 1px solid #ccc;
