@@ -96,13 +96,14 @@ img {
 
 .merge {
     display: flex;
-    gap: 15%;
+    gap: 70px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* border: 1px solid red; */
 }
 
 .col > div >h1 {
@@ -119,7 +120,7 @@ img {
 }
 
 .f1 > img {
-    width: 70%;
+    width: 95%;
 }
 
 .head > h1 {
@@ -127,7 +128,9 @@ img {
     font-weight: 400;
     padding-right: 10px;
     position: relative;
+    margin-left: 20px;
 }
+
 
 .info_box > p:first-child {
     color: #003380;
@@ -139,7 +142,7 @@ img {
 }
 
 .info_box > p:not(:first-child) {
-    margin: 0.5em;
+    margin: 0.2em;
     color: #898989;
 }
 
@@ -168,6 +171,7 @@ img {
 
 .flex5 {
     display: flex;
+    justify-content:center;
     align-items: center;
     gap: 30px;
     margin-left: 30px;
@@ -182,7 +186,7 @@ img {
 }
 
 .samsung2 {
-    width: 60%;
+    width: 70%;
 }
 
 .samsung3 {
@@ -196,3 +200,91 @@ img {
 .samsung5 {
     width: 60%;
 }
+
+hr{
+    margin-top:30px;
+}
+
+.flex6 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.op1 {
+    width: 95%;
+}
+
+.op2 {
+    width: 93%;
+}
+
+.op3 {
+    width: 95%;
+}
+.op4{
+    width: 90%;
+}
+.op5 {
+    width: 90%;
+}
+
+.rm3 {
+    width: 98%;
+}
+
+.rm4 {
+    width: 90%;
+}
+
+.rm5 {
+    width: 90%;
+    
+}
+
+.mi4 {
+    width: 108%;
+}
+
+.mi5 {
+    width:100%;
+}
+
+#all_information{
+    padding:0px;
+ }
+ .all_infor_title{
+     padding: 10px 13px;
+     color:black;
+     font-weight: 500;
+ }
+ .all_info_detail1,.all_info_detail2{
+     font-size: 15px;
+     color: #333333;
+     padding: 10px 13px;
+     text-align: justify;
+ }
+ 
+ .all_info_dift{
+     padding: 25px 13px  5px 13px;
+     color:black;
+     font-weight: 600;
+ }
+ .all_infor_title1{
+     padding: 5px 13px;
+     color:black;
+     font-weight: 500;
+ }
+ .all_info_detail3{
+     font-size: 15px;
+     color: #333333;
+     padding: 8px 13px;
+     text-align: justify;
+ }
+ .all_infor_title2{
+     color: rgb(2, 2, 143);
+     padding: 5px 13px;
+     font-weight: 500;
+ }
