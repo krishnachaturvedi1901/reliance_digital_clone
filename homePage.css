@@ -9,6 +9,7 @@ body{
 .hp{
     width: 100%;
 }
+
 #hp1>img{
     /* height: 100%; */
     width: 100%;
@@ -563,23 +564,33 @@ body{
     height: 200px;
     margin-bottom: 0px;
 }
+#hp10>.hp3L{
+    position: relative;
+}
 #hp10>.hp3L>.btnLeft{
     position: absolute;
     border: 2px solid #cecece;
-    left: 26%;
-    top: 490%;
+    top: 55%;
+    left: 340px;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#hp10>.hp3R{
+    position: relative;
 }
 #hp10>.hp3R>.btnRight{
     position: absolute;
     border: 2px solid #cecece;
     right: 0%;
-    top: 490%;
+    top: 55%;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #hp10>.mid>.components>a>.product>.box2>.proName{
     color: #003380;
@@ -694,23 +705,33 @@ body{
     height: 200px;
     margin-bottom: 0px;
 }
+#hp11>.hp3L{
+    position: relative;
+}
 #hp11>.hp3L>.btnLeft{
     position: absolute;
     border: 2px solid #cecece;
     left: 0%;
-    top: 560%;
+    top: 55%;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#hp11>.hp3R{
+    position: relative;
 }
 #hp11>.hp3R>.btnRight{
     position: absolute;
     border: 2px solid #cecece;
-    right: 26%;
-    top: 560%;
+    right: 345px;
+    top: 55%;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #hp11>.mid>.components>a>.product>.box2>.proName{
     color: #003380;
@@ -825,23 +846,33 @@ body{
     height: 200px;
     margin-bottom: 0px;
 }
+#hp12>.hp3L{
+    position: relative;
+}
 #hp12>.hp3L>.btnLeft{
     position: absolute;
     border: 2px solid #cecece;
-    left: 26%;
-    top: 630%;
+    left: 340px;
+    top: 55%;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#hp12>.hp3R{
+    position: relative;
 }
 #hp12>.hp3R>.btnRight{
     position: absolute;
     border: 2px solid #cecece;
     right: 0%;
-    top: 630%;
+    top: 55%;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #hp12>.mid>.components>a>.product>.box2>.proName{
     color: #003380;
