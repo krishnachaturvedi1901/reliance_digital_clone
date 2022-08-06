@@ -63,6 +63,32 @@ function main_navbaar(){
                  <i class="fa-solid fa-cart-shopping"></i>
                  Cart
              </a>
+             <div id="nav_cart_div_first">
+      <div id="triingle_cart"></div>
+      <div id="padding_cart_nav"></div>
+      <div id="nav_cart_item_show">
+        <div>
+          <div>
+            <img
+              src="https://www.reliancedigital.in/medias/Lenovo-41IN-Laptops-492850143-i-1?context=bWFzdGVyfGltYWdlc3wzMTg1NDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDk4L2hjYy85ODQ5MTUyNzY1OTgyLmpwZ3w5NjQwMGUxNTk1MjI5NmVlNjI0NjcyMmE0ZThjMTIyMDE1NDEwNmIwZDc4ZmYxMmYzY2FlYWM2ZTEwZjc3MDYw"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>
+              Lenovo 41IN IdeaPad Slim 3 Laptop (10th Gen-Intel Core
+              i3-1005G1/4GB/256GB SSD/Intel UHD Graphics/Windows 11/MSO/FHD),
+              35.56 cm (14 inch)
+            </h4>
+            <h3>₹31,490</h3>
+            <div class="nav_div_third">
+              <h6>Qty : 1</h6>
+              <h6><button>Remove</button></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
          </li>
          <li id="signup_login_On_nav">
              <a href="login_signup.html">

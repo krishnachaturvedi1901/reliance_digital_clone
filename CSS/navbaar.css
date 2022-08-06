@@ -1,6 +1,5 @@
 *,body{
     margin: 0;
-    /* background-color: black; */
 }
 #navbaar_div{
     background-color: #e42529;
@@ -249,6 +248,70 @@ h1{
 #home_page_user_name:hover #nav_account_div,#nav_account_div:hover{
     display: block;
 }
+#nav_cart_item{
+    position: relative;
+}
+#nav_cart_div_first{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 455px; 
+    left: -302px;
+    top: 18px;
+    display: none;
+  }
+  #nav_cart_item_show{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 270px;
+    overflow-y: scroll;
+  }
+  #nav_cart_item_show img{
+      width: 100px;
+      height: 80px;
+  }
+  #triingle_cart {
+    height: 0px;
+    width: 0px;
+    margin-left: 314px;
+    border-left: 17px solid transparent;
+    border-bottom: 17px solid white;
+    border-right: 17px solid transparent;
+  }
+  .nav_div_third{
+    display: flex;
+    margin: 5px 0px;
+    gap: 150px;
+    font-size: 17px;
+  }
+  #nav_cart_item_show>div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px dotted black;
+    padding: 5px;
+  }
+  *{
+    margin: 0;
+  }
+  #nav_cart_item_show>div button{
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+    margin-left: 50px;
+  }
+  #nav_cart_item_show h3{
+    color: blue;
+    margin-top: 10px;
+  }
+  #padding_cart_nav{
+    padding: 15px;
+    background-color: white;
+  }
 @media only screen and (max-width: 739px) {
       #nav_serchbaar_div{
         flex-direction: column;
