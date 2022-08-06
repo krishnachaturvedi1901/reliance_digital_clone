@@ -1,0 +1,21 @@
+#MY_oder_location{
+    color: blue;
+    font-weight: 700;
+    font-size: 17px;
+}
+#NO_Oder_found{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#NO_Oder_found>a{
+    color: white;
+    background-color: #003380;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+
