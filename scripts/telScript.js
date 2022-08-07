@@ -1,6 +1,21 @@
-let product=JSON.parse(localStorage.getItem("product"))
+import {telgetData} from '../components/telgetData.js';
 
-`http://localhost:3000/${product.productKey}? &id=${product.productId}`
+let product = JSON.parse(localStorage.getItem('product'));
+
+let url = `http://localhost:3000/${product.productKey}?&id=${product.productId}`
+
+
+let fetchData = async() =>{
+    try {
+        let data = await telgetData(url);
+          displayProduct(data[0]);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
 // let x = {
 //             "id" :8,
 //             "imglink":"https://www.reliancedigital.in/medias/ONEPLUS-43Y1S-EDGE-SMART-LED-TV-492796557-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MzIyMHxpbWFnZS9qcGVnfGltYWdlcy9oZTkvaDI4Lzk3Nzg1NjMzMTc3OTAuanBnfGYwZTJhZWZhNTdjMzc2MTIwZGFmNzEwYmI1YzEwOWY1NGMzMGE0ZWZkNGJlNTUyMWMwODY3MzkwNGI3OTk1ZWM",
@@ -39,12 +54,23 @@ const displayProduct=(product)=>{
     let smallImg1 = document.getElementById("threeImages")
     let imgTag1 = document.createElement("img");
     imgTag1.src=product.img1;
+    imgTag1.addEventListener('click',()=>{
+        imgTag.src = product.img1;
+    });
 
     let imgTag2 = document.createElement("img");
     imgTag2.src=product.img2;
+    imgTag2.className = "imgsub";
+    imgTag2.addEventListener('click',()=>{
+        imgTag.src = product.img2;
+    });
 
     let imgTag3 = document.createElement("img");
     imgTag3.src=product.img3;
+    imgTag3.addEventListener('click',()=>{
+        imgTag.src = product.img3;
+    });
+    imgTag3.className = "imgsub";
     smallImg1.append(imgTag1,imgTag2,imgTag3)
 
     let nameDiv=document.getElementById("productName")
@@ -59,7 +85,7 @@ const displayProduct=(product)=>{
     document.getElementById("mrp").innerText =product.MRPx;
 }
 
-displayProduct(product)
+// displayProduct(product)
 
 // displayProduct(x)
 
@@ -78,10 +104,12 @@ function addToCart(){
 
 // image iteration
 
-let images = document.querySelectorAll("#threeImages>img");
+let images = document.querySelectorAll(".imgsub");
 console.log(images)
 for(let i=0; i<images.length; i++){
     images[i].addEventListener("click",function(){
-        document.querySelector("#bigImage>img").src=images[i].src;
+        document.querySelector(".imgsub").src=images[i].src;
     })
 }
+
+window.addEventListener('load',fetchData);

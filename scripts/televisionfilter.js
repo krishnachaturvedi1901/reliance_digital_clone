@@ -29,6 +29,16 @@ let displayTeldata = (data) => {
   detail.innerText = "";
   data.map((res) => {
     let mdiv = document.createElement('div');
+    mdiv.addEventListener('click',()=>{
+      
+      let obj = {
+        productKey:"television",
+        productId : res.id
+
+      }
+      localStorage.setItem('product',JSON.stringify(obj));
+      location.href = "../pages/telDetails.html";
+    });
     let div = document.createElement('div');
     let img = document.createElement('img');
     img.src = res.imglink;
