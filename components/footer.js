@@ -46,9 +46,9 @@ function footer() {
     <div class="second">
         <div class="one">
             <h3>FOLLOW US</h3>
-            <img src="facebookLogo.png" alt="">
-            <img src="twitterLogo.png" alt="">
-            <img src="youtubeLogo.png" alt="">
+            <img src="../facebookLogo.png" alt="">
+            <img src="../twitterLogo.png" alt="">
+            <img src="../youtubeLogo.png" alt="">
         </div>
         <div class="two">
             <h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>

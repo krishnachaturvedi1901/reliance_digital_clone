@@ -1,4 +1,8 @@
-import { footer } from "./footer.js";
+import { footer } from "../components/footer.js";
+import {navtop,main_navbaar,NEW_NAVTOP,getData} from "../components/navbaar.js"
+let navtopelimet = document.getElementById("top_find_store_div").innerHTML = navtop();
+let navbaarelimet = document.getElementById("navbaar_div");
+navbaarelimet.innerHTML = main_navbaar();
 let hp13=document.querySelector("#hp13");
 hp13.innerHTML="";
 hp13.innerHTML=footer();

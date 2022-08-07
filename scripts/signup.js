@@ -41,7 +41,7 @@ let userOtpInput = login_otp_elimet.value;
 if(number==userOtpInput){
     alert("login succsessfull")
     localStorage.setItem("usersData",JSON.stringify(obj));
-    location.href = 'user_profile.html'
+    location.href = 'homePage.html'
 }
 else{
     alert("wrong otp");
@@ -70,7 +70,7 @@ const postData_toserver = async(obj)=>{
         headers:{'content-type': 'application/json',}
      })
      alert("signup succesfull");
-     localStorage.setItem("usersData",JSON.stringify(obj));
+     window.location.reload();
    } catch (error) {
     console.log(error)
    }
