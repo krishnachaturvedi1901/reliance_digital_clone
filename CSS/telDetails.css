@@ -55,18 +55,19 @@ span {
 }
 
 #productName {
-    color: #333;
+    color: rgb(35, 17, 204);
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2em;
     margin-top: 20px;
     padding-left: 15px;
+    padding-bottom: 15px;
 }
 
 .flex3 {
     display: flex;
     /* border: 1px solid red; */
-    margin-bottom: -18px;
+    margin-bottom: 10px;
 }
 
 #priceDeal {

@@ -1,5 +1,5 @@
 import { footer } from "../components/footer.js";
-import {navtop,main_navbaar,NEW_NAVTOP,getData} from "../components/navbaar.js"
+import {navtop,main_navbaar,NEW_NAVTOP} from "../components/navbaar.js"
 let navtopelimet = document.getElementById("top_find_store_div").innerHTML = navtop();
 let navbaarelimet = document.getElementById("navbaar_div");
 navbaarelimet.innerHTML = main_navbaar();
@@ -82,7 +82,7 @@ document.querySelector("#hp3btnRight").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp3;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -116,7 +116,7 @@ document.querySelector("#hp3btnRight").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp3;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -157,7 +157,7 @@ document.querySelector("#hp3btnLeft").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp3;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -191,7 +191,7 @@ document.querySelector("#hp3btnLeft").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp3;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -232,7 +232,7 @@ document.querySelector("#hp4btnLeft").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp4;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -266,7 +266,7 @@ document.querySelector("#hp4btnLeft").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp4;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -307,7 +307,7 @@ document.querySelector("#hp4btnRight").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp4;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -341,7 +341,7 @@ document.querySelector("#hp4btnRight").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp4;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -382,7 +382,7 @@ function dispData(data,parent,q,key){
         parent.innerHTML="";
         for(let i=ihp3;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -415,7 +415,7 @@ function dispData(data,parent,q,key){
         parent.innerHTML="";
         for(let i=ihp4;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -448,7 +448,7 @@ function dispData(data,parent,q,key){
         let img=document.createElement("img");
         img.setAttribute("src","https://www.reliancedigital.in/medias/Smartwatches-at-NEVER-before-prices.jpg?context=bWFzdGVyfGltYWdlc3w5NjczNHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGZiLzk4NjAwNjU5NTE3NzQuanBnfGMwMmUwNTdhMzY1NDBmNjk3ZWJiZmNiMTBkZGRhOGZjNTYxNjgxMTQ4YjllYjhjYjRiZTAxYTU5MWUyMWNiZWE");
         let a1=document.createElement("a");
-        a1.setAttribute("href","");
+        a1.setAttribute("href","../pages/telDetails.html");
         a1.append(img);
         parent.innerHTML="";
         parent.append(a1);
@@ -489,7 +489,7 @@ function dispData(data,parent,q,key){
         parent.innerHTML="";
         for(let i=ihp11;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -522,7 +522,7 @@ function dispData(data,parent,q,key){
         let img=document.createElement("img");
         img.setAttribute("src","https://www.reliancedigital.in/medias/Best-Selling-Soundbars-Products-Carousel-Banner-30-06-2022.jpg?context=bWFzdGVyfGltYWdlc3w1MDA1OHxpbWFnZS9qcGVnfGltYWdlcy9oZmYvaDBkLzk4NTc5NzI4OTU3NzQuanBnfGZmYTM1ZDMzNGU5YTY3NzA1NWJiNWE1OTA4MTU5MjIyMTRjNWY1MTA4ZmQxNGM5NGNhMzU2YjUyMzE4Y2QzNWI");
         let a1=document.createElement("a");
-        a1.setAttribute("href","");
+        a1.setAttribute("href","../pages/telDetails.html");
         a1.append(img);
         // parent.innerHTML="";
         parent.append(a1);
@@ -531,14 +531,14 @@ function dispData(data,parent,q,key){
         let img=document.createElement("img");
         img.setAttribute("src","https://www.reliancedigital.in/medias/Top-seller-from-TCL-IFFALCON.jpg?context=bWFzdGVyfGltYWdlc3wxNTY1NTl8aW1hZ2UvanBlZ3xpbWFnZXMvaGMyL2hmNS85ODU5NzA0Njg0NTc0LmpwZ3w5ZTg5YzdmNDlkZTAzY2YyZjY1NzY4NzA3MGFjMzJlZTkyNTIyZGJmY2U0NjMxN2E3NWVkODM3NTI0ZDIzYWI1");
         let a1=document.createElement("a");
-        a1.setAttribute("href","");
+        a1.setAttribute("href","../pages/telDetails.html");
         a1.append(img);
         parent.innerHTML="";
         parent.append(a1);
         console.log(img,a1);
         for(let i=ihp12;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -616,7 +616,7 @@ document.querySelector("#hp10btnLeft").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp10;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -656,7 +656,7 @@ document.querySelector("#hp10btnLeft").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp10;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -703,7 +703,7 @@ document.querySelector("#hp10btnRight").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp10;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -784,7 +784,7 @@ document.querySelector("#hp11btnLeft").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp11;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -825,7 +825,7 @@ document.querySelector("#hp11btnLeft").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp11;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -873,7 +873,7 @@ document.querySelector("#hp11btnRight").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp11;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -914,7 +914,7 @@ document.querySelector("#hp11btnRight").addEventListener("click",async ()=>{
         parent.innerHTML="";
         for(let i=ihp11;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -968,7 +968,7 @@ document.querySelector("#hp12btnLeft").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp12;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -1008,7 +1008,7 @@ document.querySelector("#hp12btnLeft").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp12;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -1055,7 +1055,7 @@ document.querySelector("#hp12btnRight").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp12;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">
@@ -1095,7 +1095,7 @@ document.querySelector("#hp12btnRight").addEventListener("click",async ()=>{
         parent.append(a1);
         for(let i=ihp12;i<data.length;i++){
             let a=document.createElement("a");
-            a.setAttribute("href","");
+            a.setAttribute("href","../pages/telDetails.html");
             let str=`
                 <div class="product">
                     <div class="box1">

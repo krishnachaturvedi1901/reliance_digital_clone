@@ -225,7 +225,7 @@ function main_navbaar(){
          </li>
          <!-- categry television -->
          <li id="ctegry_list_telivision">
-           <a href="#">
+           <a href="../pages/telLandpage.html">
              TELEVISIONS
              <i class="fa-solid fa-angle-down"></i>
            </a>
@@ -233,22 +233,22 @@ function main_navbaar(){
                 <div>
                  <ul class="discription_nav">
                      <li class="nav_discription_heading">
-                         <a href="#">Televisions</a>
+                         <a href="../pages/telLandpage.html">Televisions</a>
                      </li>
                      <li>
-                       <a href="#">Smart TVs</a>  
+                       <a href="../pages/telLandpage.html">Smart TVs</a>  
                      </li>
                      <li>
-                         <a href="#">32 Inch TVs</a>
+                         <a href="../pages/telLandpage.html">32 Inch TVs</a>
                      </li>
                      <li>
-                         <a href="#">43 Inch TVs</a>
+                         <a href="../pages/telLandpage.html">43 Inch TVs</a>
                      </li>
                      <li>
-                         <a href="#">55 Inch TVs</a>
+                         <a href="../pages/telLandpage.html">55 Inch TVs</a>
                      </li>
                      <li>
-                         <a href="#">Android TVs</a>
+                         <a href="../pages/telLandpage.html">Android TVs</a>
                      </li>
                  </ul>
                 </div>

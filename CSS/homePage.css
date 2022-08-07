@@ -1021,3 +1021,7 @@ body{
     width: 100%;
     color: white;
 }
+#main_serchbaar .fa-solid {
+    position:absolute;
+    right: 14px;
+}

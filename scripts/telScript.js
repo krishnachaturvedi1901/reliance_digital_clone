@@ -1,4 +1,13 @@
 import {telgetData} from '../components/telgetData.js';
+import { footer } from "../components/footer.js";
+import {main_navbaar,NEW_NAVTOP} from "../components/navbaar.js"
+let navtopelimet = document.getElementById("top_find_store_div").innerHTML = NEW_NAVTOP();
+let navbaarelimet = document.getElementById("navbaar_div");
+navbaarelimet.innerHTML = main_navbaar();
+let hp13=document.querySelector("#hp13");
+hp13.innerHTML="";
+hp13.innerHTML=footer();
+
 
 let product = JSON.parse(localStorage.getItem('product'));
 

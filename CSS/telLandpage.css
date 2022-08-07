@@ -24,16 +24,19 @@ img {
 .flex1 {
     display:flex;
     width: 40%;
-    gap: 1.5%;
-    padding-left:10px;
+    /* gap: 1.5%; */
+    /* padding-left:10px; */
+    align-items: center;
 }
 
 .flex1 > a {
     text-decoration: none;
-    margin-top: 23px;
+    /* margin-top: 23px; */
     color: #003380;
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
+    margin-left: -40px;
 }
 
 .flex2 {
@@ -107,9 +110,9 @@ img {
 }
 
 .col > div >h1 {
-    font-size: 24px;
-    font-weight: 400;
-    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    /* padding-right: 10px; */
     position: relative;
 }
 

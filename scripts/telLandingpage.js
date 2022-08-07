@@ -1,3 +1,13 @@
+import { footer } from "../components/footer.js";
+import {main_navbaar,NEW_NAVTOP} from "../components/navbaar.js"
+let navtopelimet = document.getElementById("top_find_store_div").innerHTML = NEW_NAVTOP();
+let navbaarelimet = document.getElementById("navbaar_div");
+navbaarelimet.innerHTML = main_navbaar();
+let hp13=document.querySelector("#hp13");
+hp13.innerHTML="";
+hp13.innerHTML=footer();
+
+
 let images = [
     "https://www.reliancedigital.in/medias/RD-CLP-Sansui-TV-banner-D.jpg?context=bWFzdGVyfGltYWdlc3w5OTI1MXxpbWFnZS9qcGVnfGltYWdlcy9oYTUvaDFkLzk4NTgyMjg4NDY2MjIuanBnfDBiNmU0Y2RkZjgwNjM3ZmFmYWZjNDEzNzE0MmQ5ZGZlNjIxMjJmNGY5YzZkYTZjY2VjODVkMTRjMTY2NTVmZGI",
     "https://www.reliancedigital.in/medias/LG-RD-CLP-Bannrer-Desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMzExODl8aW1hZ2UvanBlZ3xpbWFnZXMvaDg4L2g1ZC85ODU3NjQ2NTU5MjYyLmpwZ3w1NWNmZWVmOGI4YmY5NDc0ZWMwMGM2Y2Q4MDFmM2RlNzI4NzRlYjBmMjA3MmNhZjQ5YmEwMGVlYTdhYmIwZTdk",
