@@ -1,5 +1,5 @@
-function navtop(){
-    return`<ul id="find_store_list">
+function navtop() {
+  return `<ul id="find_store_list">
     <li>
         <a href="#">
             <i class="fa-solid fa-location-dot"></i>
@@ -11,10 +11,10 @@ function navtop(){
     <li>
         <a href="#">Contact Us</a>
     </li>
-  </ul>`
+  </ul>`;
 }
-function NEW_NAVTOP(){
-      return `<ul id="navbaar_top_on_another_page">
+function NEW_NAVTOP() {
+  return `<ul id="navbaar_top_on_another_page">
       <li>
        OUR BRAND PROMISE
       </li>
@@ -41,10 +41,10 @@ function NEW_NAVTOP(){
       <li>
        CONTACT US
        </li>
-  </ul>`
+  </ul>`;
 }
-function main_navbaar(){
-    return`<!-- logo and seach baar and cart and login -->
+function main_navbaar() {
+  return `<!-- logo and seach baar and cart and login -->
     <div id="nav_serchbaar_div">
        <a href="homePage.html">
          <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
@@ -59,7 +59,7 @@ function main_navbaar(){
          </li>
          <li id="nav_cart_item">
              <span id="nav_cart_item_total">0</span>
-             <a href="#">
+             <a href="cart.html">
                  <i class="fa-solid fa-cart-shopping"></i>
                  Cart
              </a>
@@ -89,7 +89,7 @@ function main_navbaar(){
         </div>
       </div>
       <div id ="view_cart_button_nav">
-        <a href="#"><button>VIEW CART</button></a>
+        <a href="cart.html"><button>VIEW CART</button></a>
      </div>
     </div>
          </li>
@@ -1077,25 +1077,31 @@ function main_navbaar(){
              </div>
          </li>
       </ul>
-    </div>`
+    </div>`;
 }
-const getData = async(url)=>{
-    try {
-       let res = await fetch(url);
-       let data = await res.json(); 
-       return data;
-    } catch (error) {
-        console.log(error);
-    }
-}
-const show_uersIn_nav = (user)=>{
-    let pincodeElimnet = document.getElementById("register_pincode");
-    pincodeElimnet.innerText = `Deliver to ${user.city}` 
-    let signup_login_On_naveliment = document.getElementById("signup_login_On_nav");
-    signup_login_On_naveliment.style.display = "none"
-    let home_page_user_name_textEliment = document.getElementById("home_page_user_name_text");
-    let home_page_user_name_eliment = document.getElementById("home_page_user_name");
-    home_page_user_name_eliment.style.display = "block"
-    home_page_user_name_textEliment.innerText = user.name
-}
-export {navtop,main_navbaar,NEW_NAVTOP,getData,show_uersIn_nav};
+const getData = async (url) => {
+  try {
+    let res = await fetch(url);
+    let data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+const show_uersIn_nav = (user) => {
+  let pincodeElimnet = document.getElementById("register_pincode");
+  pincodeElimnet.innerText = `Deliver to ${user.city}`;
+  let signup_login_On_naveliment = document.getElementById(
+    "signup_login_On_nav"
+  );
+  signup_login_On_naveliment.style.display = "none";
+  let home_page_user_name_textEliment = document.getElementById(
+    "home_page_user_name_text"
+  );
+  let home_page_user_name_eliment = document.getElementById(
+    "home_page_user_name"
+  );
+  home_page_user_name_eliment.style.display = "block";
+  home_page_user_name_textEliment.innerText = user.name;
+};
+export { navtop, main_navbaar, NEW_NAVTOP, getData, show_uersIn_nav };

@@ -6,7 +6,15 @@
 
 // let footerMain=document.getElementById("footerMain")
 // footerMain.innerHTML=footer()
-
+import {navtop,main_navbaar,NEW_NAVTOP,getData,show_uersIn_nav} from "../components/navbaar.js"
+let navtopelimet = document.getElementById("top_find_store_div")
+navtopelimet.innerHTML = NEW_NAVTOP();
+let navbaarelimet = document.getElementById("navbaar_div");
+navbaarelimet.innerHTML = main_navbaar();
+//footer
+import {footer} from "../components/footer.js"
+let footerEliment = document.getElementById("hp13");
+footerEliment.innerHTML = footer();
 
 let ordershow = document.getElementById('displayBuyingProductDiv');
 let order_product = document.getElementById('viewTotalAmount');
@@ -39,44 +47,24 @@ ordershow.addEventListener('click',()=>{
 
 let cartArr=JSON.parse(localStorage.getItem("Cart"))||[]
 
-
+let user_data = JSON.parse(localStorage.getItem("usersData"))||[];
 // adress box-------------------------------------------->
 
 
 let viewTotalAmount=document.getElementById("viewTotalAmount")
 let displayAdrress_pincodeHere=document.getElementById("displayAdrress_pincodeHere")
 let flag=true
-let chooseShippingAddress=document.getElementById("chooseShippingAddress")
-chooseShippingAddress.addEventListener("click",function(){displayDeliveryOptions(flag=true,displayAdrress_pincodeHere)})
-let choosePickupStore=document.getElementById("choosePickupStore")
-choosePickupStore.addEventListener("click",function(){displayDeliveryOptions(flag=false,displayAdrress_pincodeHere)})
-
-
-function displayDeliveryOptions(flag,parentBox){
-    parentBox.innerHTML=""
-    let addressOptionHtml=`
-    <div id="addressEditDiv">
-        <textArea id="addressBox" rows="4" cols="5" placeholder="Please add your address..."></textArea>
-        <div id="edit_deleteAddress">
-          <div id="editAddress">Edit Address</div>
-          <div id="deleteAddress">Delete Address</div>
-        </div>
-    </div>
-    
-    <p>Need GST Invoice?<a href="#">Click here</a></p>
-    <div id="deliveryConfirm">
-        <div id="deliverHere">Deliver Here</div>
-        <div id="changeShippingAddress">Add New Shipping Address</div>
-    </div>`
-    
-    let StoreOptionHtml=`
-    <Input>Enter Pin Code to Search Store</Input>
-    <label for="">Search Store</label>
-    `
-    
-    if(flag){parentBox.innerHTML=addressOptionHtml}
-    else{parentBox.innerHTML=StoreOptionHtml}
+let chooseShippingAddress=document.getElementById("deliveryMethodBox")
+const displayDeliveryOptions = ()=>{
+    let chooseShippingAddress = document.getElementById("chooseShippingAddress");
+    let shipping_picode_clickDiv = document.getElementById("shipping_picode_clickDiv");
+    chooseShippingAddress.innerText = `SHIPPING ADDRESS : ${user_data.address}`
+    shipping_picode_clickDiv.style.display = "block"
 }
+chooseShippingAddress.addEventListener("click",function(){displayDeliveryOptions()})
+// let choosePickupStore=document.getElementById("choosePickupStore")
+// choosePickupStore.addEventListener("click",function(){displayDeliveryOptions(flag=false,displayAdrress_pincodeHere)})
+
 
 
 // display Cart -------------------------------------------->
@@ -233,9 +221,8 @@ function displayTotal(total,itemCount,parentDiv){
   <h3>Proceed To Payment</h3>
  </div>
   `
-
     parentDiv.innerHTML=priceHtml
-
+    
     let paymentOptionDiv=document.getElementById("paymentOptionDiv")
    let proceedToPaymentBtn=document.getElementById("proceedToPaymentBtn")
    proceedToPaymentBtn.addEventListener("click",function(){displayPaymentMethods(total,paymentOptionDiv)})
@@ -263,25 +250,65 @@ calculateTotal()
 
 
 
+// function displayPaymentMethods(total,parentDiv){
+//     let div = document.createElement("div")
+//     let h3 = document.createElement("h3");
+//     h3.innerText = "PAY SECURELY"
+//     let paymentOptionDivHtml=`<div id="upi">
+//  <div id="">UPI</div>
+//  <div id="">Debit Card</div>
+//  <div id="">Credit Card</div>
+// </div>
+// <div id="displayUpi">
+//  <div id="upiPayment">UPI Payment</div>
+//  <div id="upiDetail">
+//      <p>*Clicking on “Pay” will take you to a secure payment gateway where you can enter the UPI Id 
+// and make your payment. Your order will not be completed without this action</p>
+//      <input type="checkbox">
+//      <label for="" id="terms">I agree to the Terms & Conditions</label>
+//      <div id="payAmountBtn">Pay Amount- Rs.${total}</div>
+//  </div>
+// </div>
+//     `
+//     div.innerHTML = paymentOptionDivHtml
+//     parentDiv.append(h3,div);
+
+    
+// let payAmountBtn=document.getElementById("payAmountBtn")
+// console.log(payAmountBtn)
+// payAmountBtn.addEventListener("click",alert_myOrdersPostRequestFunction)
+// }
 function displayPaymentMethods(total,parentDiv){
     let paymentOptionDivHtml=`
-    <div id="paySecurely">PAY SECURELY</div>
-<div id="upi">
- <div id="">UPI</div>
- <div id="">Debit Card</div>
- <div id="">Credit Card</div>
-</div>
-<div id="displayUpi">
- <div id="upiPayment">UPI Payment</div>
- <div id="upiDetail">
-     <p>*Clicking on “Pay” will take you to a secure payment gateway where you can enter the UPI Id 
-and make your payment. Your order will not be completed without this action</p>
-     <input type="checkbox">
-     <label for="" id="terms">I agree to the Terms & Conditions</label>
-     <div id="payAmountBtn">Pay Amount- Rs.${total}</div>
+ <div id="paySecurely">
+    <h3>PAY SECURELY</h3>
+    <div id="upiParentDiv">
+     <div id="upi">
+       <div id="">UPI</div>
+       <div id="">Debit Card</div>
+       <div id="">Credit Card</div>
+       <div id="">Net Banking</div>
+       <div id="">Wallet</div>
+       <div id="">Buy Now Pay Later</div>
+     </div>
+     <div id="displayUpi">
+       <div id="upiPayment">UPI Payment</div>
+       <div id="upiDetail">
+          <p>*Clicking on “Pay” will take you to a secure payment gateway where you can enter the UPI Id 
+          and make your payment. Your order will not be completed without this action</p>
+          <div id="checkbox_terms">
+             <input type="checkbox" id="checkbox">
+             <label for="" id="terms">I agree to the Terms & Conditions</label>
+          </div>
+          <div id="payAmountBtn">Pay Amount- Rs.${total}</div>
+        </div>
+     </div>
+    </div>
  </div>
-</div>
+
     `
+    total_detail.style.display = "flex"
+  order_product.style.display ="block"
     parentDiv.innerHTML=paymentOptionDivHtml
 
     
@@ -289,10 +316,49 @@ let payAmountBtn=document.getElementById("payAmountBtn")
 console.log(payAmountBtn)
 payAmountBtn.addEventListener("click",alert_myOrdersPostRequestFunction)
 }
+const PostoredrData = async()=>{
+   try {
+      let loginData = JSON.parse(localStorage.getItem("usersData"))||{};
+      for(var i = 0; i<cartArr.length; i++){
+         loginData.order.push(cartArr[i]);
+      }
+      let obj = {
+        name:loginData.name,
+        email:loginData.email,
+        mobile:loginData.mobile,
+        city:loginData.city,
+        order:loginData.order,
+        address:loginData.address
+     }
+     let url = `http://localhost:3000/profile/${loginData.id}`
+     let postData = await fetch(url,{
+        method:"PATCH",
+        body:JSON.stringify(obj),
+        headers:{'content-type': 'application/json',}
+     })
 
-function alert_myOrdersPostRequestFunction(){
-    alert("Order Placed Successfully")
+   } catch (error) {
+     console.log(error)
+   }
 }
+const DeleteData = async()=>{
+    try {
+        let loginData = JSON.parse(localStorage.getItem("usersData"))||{};
+        let url = `http://localhost:3000/profile/${loginData.id}`
+         let res = await fetch(url,{
+           method:"delete"
+        })
+    } catch (error) {
+        
+    }
+}
+function alert_myOrdersPostRequestFunction(){
+    PostoredrData();
+    localStorage.setItem("Cart",JSON.stringify([]));
+    alert("Order Placed Successfully")
+    location.href = "homePage.html"
+}
+document.getElementById("nav_cart_item").style.display= "none"
 
 
 

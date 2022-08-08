@@ -6,7 +6,15 @@
 
 // let footerMain=document.getElementById("footerMain")
 // footerMain.innerHTML=footer()
-
+import {navtop,main_navbaar,NEW_NAVTOP,getData,show_uersIn_nav} from "../components/navbaar.js"
+let navtopelimet = document.getElementById("top_find_store_div")
+navtopelimet.innerHTML = NEW_NAVTOP();
+let navbaarelimet = document.getElementById("navbaar_div");
+navbaarelimet.innerHTML = main_navbaar();
+//footer
+import {footer} from "../components/footer.js"
+let footerEliment = document.getElementById("hp13");
+footerEliment.innerHTML = footer();
 let cartArr=JSON.parse(localStorage.getItem("Cart"))||[]
 console.log(cartArr)
 let listProductsDiv=document.getElementById("listCartProducts")
@@ -140,7 +148,12 @@ let checkoutCart=document.getElementById("checkout")
 checkoutCart.addEventListener("click",moveToCheckoutCart)
 
 function moveToCheckoutCart(){
-    location.href="checkoutCart.html"
+    let loginData = JSON.parse(localStorage.getItem("usersData"))||{};
+    if(loginData.name){
+        location.href="checkoutCart.html"
+   }else{
+      location.href = "login_signup.html"
+   }
 }
 calculateTotal()
 function calculateTotal(){
@@ -182,3 +195,4 @@ function displayTotal(total,itemCount){
   let totalInCart=document.getElementById("totalInCart")
   totalInCart.innerHTML=totalItem_pincode_html
 }
+document.getElementById("nav_cart_item").style.display= "none"

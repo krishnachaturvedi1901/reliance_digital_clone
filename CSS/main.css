@@ -2,17 +2,6 @@
 *{
     margin: 0%;
 }
-#navMain{
-    height: 120px;
-    width: 100%;
-    background-color: rgb(231, 8, 8);
-    border: 1px solid #cecece;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
-    
-}
 #cartSection>a{
     font-size: 20px;
     color: white;
@@ -558,6 +547,7 @@ margin-right: 15px;
 }
 #checkoutCartbody{
     background-color: #F5F7F7;
+    border: 1px solid black;
 }
 #deliveryMethodBox{
     background-color: white;
@@ -597,4 +587,81 @@ margin-right: 15px;
 }
 #viewTotalAmont_ProceedToPaymentDiv{
     display: none;
+}
+#shipping_picode_clickDiv{
+    display: none;
+}
+#paySecurely{
+    width: 1200px;
+    background-color: white;
+    /* padding:5px 5px; */
+    margin: 20px auto;
+    border-radius: 5px;
+}
+#paySecurely>h3{
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    /* border: 1px solid red; */
+    padding: 10px 15px;
+}
+#upiParentDiv{
+    display: flex;
+}
+#upi>div{
+    border: 1px solid #DCDCDC;
+    padding :20 10 20 40;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+
+}
+#upiPayment{
+    height: 28px;
+    color: #003380;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 8px 15px 0px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#upiDetail>p{
+  color: #003380;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 15px 10px;
+}
+#checkbox_terms{
+    display: flex;
+}
+#checkbox{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#terms{
+  color: #003380;
+  font-size: 15px;
+}
+#payAmountBtn{
+    height: 24px;
+    width: 200px;
+    background-color: #D32F2F;
+    border: 1px solid #E42529;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    cursor: pointer;
+    margin: 15px 15px 10px 15px;
+}
+#upi>div:hover{
+    color: #0c5acf;
+    font-weight: bold;
+}
+#upi>div:first-child{
+    color: #0c5acf;
+    font-weight: bold;
 }
