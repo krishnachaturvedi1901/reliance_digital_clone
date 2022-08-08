@@ -100,15 +100,40 @@ const displayProduct=(product)=>{
 
 let cartBtn=document.getElementById("addToCartDetail")
 cartBtn.addEventListener("click",addToCart)
-
+function addToCartarr(product,key){
+    let cartProductArr=JSON.parse(localStorage.getItem("Cart"))||[];
+  
+      
+      product.productKey  = key
+     
+  
+     if(cartProductArr.length!=0){
+     let flag="newProduct"
+     for(let i=0;i<cartProductArr.length;i++) {
+        if(cartProductArr[i].id==product.id){
+           cartProductArr[i].itemCount++;
+           flag="oldProduct";
+            break;
+        }
+     }
+     if(flag=="newProduct"){
+        product.itemCount=1
+        cartProductArr.push(product)
+     }
+    }
+    else if(cartProductArr.length==0){
+     product.itemCount=1
+     cartProductArr.push(product)
+    }
+    localStorage.setItem("Cart",JSON.stringify(cartProductArr));
+    // console.log(cartProductArr);
+    location.reload();
+  }
 async function addToCart(){
     let url = `http://localhost:3000/${product.productKey}?&id=${product.productId}`
     let data = await telgetData(url);
-    let cartProductArr=JSON.parse(localStorage.getItem("Cart"))||[]
-    cartProductArr.push(data[0])
-    // console.log(cartProductArr)
-    localStorage.setItem("Cart",JSON.stringify(cartProductArr))
-    window.onload(location.href="cart.html") 
+    // cartProductArr.push(data[0])
+     addToCartarr(data[0],product.productKey);
 }
 
 
