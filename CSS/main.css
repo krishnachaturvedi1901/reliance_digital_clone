@@ -313,7 +313,7 @@ margin-right: 15px;
 #checkout{
     height: 36px;
     width: 422px;
-    border: 1px soild #E42529;
+    border: 1px soild #161616;
     background-color: #D32F2F;
     color: white;
     display: flex;
@@ -550,11 +550,12 @@ margin-right: 15px;
     border: 1px solid black;
 }
 #deliveryMethodBox{
-    background-color: white;
+    background-color: rgb(246, 237, 237);
     width:90%;
     margin: auto;
-    border: 2px solid red;
+    border-bottom: 2px solid rgb(22, 22, 22);
     padding: 10px 5px;
+    cursor: pointer;
 }
 #shipping_pincode_clickDiv>h4{
     display: flex;
@@ -582,7 +583,7 @@ margin-right: 15px;
     border-bottom: 2px solid black;
     padding-bottom: 10px;
 
-    
+    background-color: rgb(246, 237, 237);
 
 }
 #viewTotalAmont_ProceedToPaymentDiv{

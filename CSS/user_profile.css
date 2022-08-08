@@ -97,3 +97,7 @@
 .text_size_fix{
     font-weight: 700;
 }
+#main_serchbaar .fa-solid {
+    position:absolute;
+    right: -14px;
+}

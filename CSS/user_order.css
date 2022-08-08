@@ -34,5 +34,9 @@
 #user_order_grid>div h4{
     width: 50%;
 }
+#main_serchbaar .fa-solid {
+    position:absolute;
+    right: -14px;
+}
 
 

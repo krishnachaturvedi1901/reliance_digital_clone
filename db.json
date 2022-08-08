@@ -1463,5 +1463,44 @@
       "img3": "https://www.reliancedigital.in/medias/ONEPLUS-43Y1S-EDGE-SMART-LED-TV-492796557-i-3-1200Wx1200H-96Wx96H?context=bWFzdGVyfGltYWdlc3w3MDM0fGltYWdlL2pwZWd8aW1hZ2VzL2gyNS9oOGQvOTc3ODU2NDE2OTc1OC5qcGd8N2Q1ZmIzNGU0YjRkODg4N2MwMzE3M2RkYjA1YzM0ZDY1NGQwY2E2MTE0ODRmYTY4ZThhZDQ4MmVhOGNjZWJiYw"
     }
   ],
-  "profile": []
+  "profile": [
+    {
+      "name": "Akash Patel",
+      "email": "Akash@gmail.com",
+      "mobile": "6394292357",
+      "city": "Pune",
+      "order": [
+        {
+          "id": 7,
+          "imglink": "https://www.reliancedigital.in/medias/Xiaomi-ELA4701IN-Televisions-492571689-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4NzQyMnxpbWFnZS9qcGVnfGltYWdlcy9oZjUvaDZmLzk2OTE2NjA0NTE4NzAuanBnfDA0NzYyMTg0OTQ4ZWZhYTMyM2Y1MTdiNmFhYmQ4MDczYjM1OTA0OTY4MDYwYWZmZjYzMTljMmZhYTFkZjMyYmY",
+          "name": "Redmi 80 cm (32 inch) HD Smart LED ELA4915/4732/01IN",
+          "MRP": 24999,
+          "MRPx": "₹24,999",
+          "brand": "redmi",
+          "dealprice": 14999,
+          "dealpricex": "₹14,999",
+          "discount": 40,
+          "page": 1,
+          "discountx": "40%",
+          "saveprice": 10000,
+          "savepricex": "₹10,000",
+          "cashback": "no",
+          "feature": "HDMI",
+          "tvops": "Linux",
+          "HDMI": 2,
+          "USB": 2,
+          "displayTech": "OLED",
+          "displayType": "UltraHD(4K)",
+          "displaySize": "178cm",
+          "img1": "https://www.reliancedigital.in/medias/Xiaomi-ELA4701IN-Televisions-492571689-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MTQ4MTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaGYxL2g3Zi85NjkxNjYwMjU1MjYyLmpwZ3wzZjRhNGVjNTk5YjEzYzNmNjkzNmIzOGY2YmYyY2VhNzM1YjgyZGY1NDMzNzAwY2U4NmM0NjgyNTFmMjJmY2M4",
+          "img2": "https://www.reliancedigital.in/medias/Xiaomi-ELA4701IN-Televisions-492571689-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzNTc1OTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDAyL2gzOS85NjkxNjYxODkzNjYyLmpwZ3wxMGVhNzNiMDNjODlmOWQ0NTNhMGJjODI3NGY3M2ZkZDU3ZDA5NmRjNDVjYjg5MWUxYzRhYmZkODNhNTkxMWUy",
+          "img3": "https://www.reliancedigital.in/medias/Xiaomi-ELA4701IN-Televisions-492571689-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzNTc1OTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDAyL2gzOS85NjkxNjYxODkzNjYyLmpwZ3wxMGVhNzNiMDNjODlmOWQ0NTNhMGJjODI3NGY3M2ZkZDU3ZDA5NmRjNDVjYjg5MWUxYzRhYmZkODNhNTkxMWUy",
+          "productKey": "television",
+          "itemCount": 1
+        }
+      ],
+      "address": "GRAM AHMADPUR KAREND",
+      "id": 1
+    }
+  ]
 }

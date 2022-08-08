@@ -149,8 +149,11 @@ checkoutCart.addEventListener("click",moveToCheckoutCart)
 
 function moveToCheckoutCart(){
     let loginData = JSON.parse(localStorage.getItem("usersData"))||{};
+    let cartArr=JSON.parse(localStorage.getItem("Cart"))||[]
     if(loginData.name){
-        location.href="checkoutCart.html"
+        if(cartArr.length>0){
+          location.href="checkoutCart.html"
+        }
    }else{
       location.href = "login_signup.html"
    }
