@@ -144,7 +144,7 @@ const showCartDataOnNav = (cartData)=>{
             let priceelimet = document.createElement("h3");
             priceelimet.innerText = `₹${element.dealprice}`
             let quantity = document.createElement("h6");
-            quantity.innerText = `Qty : 1`
+            quantity.innerText = `Qty : ${element.itemCount}`
             let button = document.createElement("button");
             button.innerText = "Remove"
             let imgDiv = document.createElement("div");
@@ -166,6 +166,7 @@ const showCartDataOnNav = (cartData)=>{
 
     }else{
         let carttotal = document.getElementById("nav_cart_item_total");
+        document.getElementById("nav_cart_div_first").style.display = "none";
         carttotal.style.display = "none";
     }
 }

@@ -175,6 +175,7 @@ text-decoration: line-through;
 }
 #all_teldetails > div > div + div div:nth-child(2){
     border-left: 1px solid rgb(222, 216, 216) ;
+    cursor: pointer;
 }
 
 
