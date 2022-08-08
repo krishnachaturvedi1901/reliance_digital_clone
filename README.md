@@ -55,21 +55,21 @@ Start the server
 
 ## Screenshots
 
-![Website Screenshot][![Login-page.png](https://i.postimg.cc/ZnYhFp0W/Login-page.png)](https://postimg.cc/k6HZ7VQC)
+[![Login-page.png](https://i.postimg.cc/ZnYhFp0W/Login-page.png)](https://postimg.cc/k6HZ7VQC)
 
-![Website Screenshot][![User-details.png](https://i.postimg.cc/qBmfHtzG/User-details.png)](https://postimg.cc/RqnpcZ13)
+[![User-details.png](https://i.postimg.cc/qBmfHtzG/User-details.png)](https://postimg.cc/RqnpcZ13)
 
-![Website Screenshot][![landing-page.png](https://i.postimg.cc/66SXG2tp/landing-page.png)](https://postimg.cc/xqK7wdXw)
+[![landing-page.png](https://i.postimg.cc/66SXG2tp/landing-page.png)](https://postimg.cc/xqK7wdXw)
 
-![Website Screenshot][![television-landing-page.png](https://i.postimg.cc/d1rxk1BL/television-landing-page.png)](https://postimg.cc/HcW2FTFg)
+[![television-landing-page.png](https://i.postimg.cc/d1rxk1BL/television-landing-page.png)](https://postimg.cc/HcW2FTFg)
 
-![Website Screenshot][![Television-filter-page.png](https://i.postimg.cc/ydmL6G1R/Television-filter-page.png)](https://postimg.cc/YGS6bbm2)
+[![Television-filter-page.png](https://i.postimg.cc/ydmL6G1R/Television-filter-page.png)](https://postimg.cc/YGS6bbm2)
 
-![Website Screenshot][![Ind-product-details.png](https://i.postimg.cc/bNC3vkhm/Ind-product-details.png)](https://postimg.cc/VdtjGS5t)
+[![Ind-product-details.png](https://i.postimg.cc/bNC3vkhm/Ind-product-details.png)](https://postimg.cc/VdtjGS5t)
 
-![Website Screenshot][![Add-to-cart.png](https://i.postimg.cc/pr0Ypbgm/Add-to-cart.png)](https://postimg.cc/WqkJHKpV)
+[![Add-to-cart.png](https://i.postimg.cc/pr0Ypbgm/Add-to-cart.png)](https://postimg.cc/WqkJHKpV)
 
-![Website Screenshot][![make-payment.png](https://i.postimg.cc/Gh2x6tyG/make-payment.png)](https://postimg.cc/hhkmdSMt)
+[![make-payment.png](https://i.postimg.cc/Gh2x6tyG/make-payment.png)](https://postimg.cc/hhkmdSMt)
 
 
 ## Challenges
