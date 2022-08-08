@@ -88,6 +88,9 @@ function main_navbaar(){
           </div>
         </div>
       </div>
+      <div id ="view_cart_button_nav">
+        <a href="#"><button>VIEW CART</button></a>
+     </div>
     </div>
          </li>
          <li id="signup_login_On_nav">
