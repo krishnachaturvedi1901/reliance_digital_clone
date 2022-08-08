@@ -69,9 +69,6 @@ Start the server
 
 [![Add-to-cart.png](https://i.postimg.cc/pr0Ypbgm/Add-to-cart.png)](https://postimg.cc/WqkJHKpV)
 
-[![make-payment.png](https://i.postimg.cc/Gh2x6tyG/make-payment.png)](https://postimg.cc/hhkmdSMt)
-
-
 ## Challenges
 
 1. As every journey has some challenges and so was ours. In our team, all of the members were not familiar with each other so it was difficult for all of us to communicate and collaborate, there were some moments where members were not able to communicate with each other and had a conflict and it was hard for everyone to handle these conflicts.
