@@ -127,7 +127,8 @@ function addToCartarr(product,key){
     }
     localStorage.setItem("Cart",JSON.stringify(cartProductArr));
     // console.log(cartProductArr);
-    location.reload();
+    // location.reload();
+    location.href="cart.html";
   }
 async function addToCart(){
     let url = `http://localhost:3000/${product.productKey}?&id=${product.productId}`

@@ -530,12 +530,6 @@ margin-right: 15px;
 #checkoutPageBody{
     height: 1500px;
 }
-#deliveryMethodBox{
-    height: 38px;
-    width: 1248px;
-    padding: 8px 16px 8px 16px;
-    border: 1px solid red;
-}
 #shipping_picode_clickDiv{
     display: flex;
 }
@@ -567,17 +561,40 @@ margin-right: 15px;
 }
 #deliveryMethodBox{
     background-color: white;
-    width: 1298px;
+    width:90%;
     margin: auto;
-}
-#deliverMethods{
-    width: 1266px;
-    padding: 8px 16px 8px 16px;
-
+    border: 2px solid red;
+    padding: 10px 5px;
 }
 #shipping_pincode_clickDiv>h4{
     display: flex;
     height: 40px;
     width: 140px;
     border-bottom: 2px solid #0c5acf;
+}
+#displayBuyingProductDiv{
+    /* border: 2px solid red; */
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px 0px 5px;
+}
+#viewTotalAmount{
+    margin-top: 20px;
+    display: none;
+}
+#orderDetailDiv{
+    font-weight: 600px;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+
+    
+
+}
+#viewTotalAmont_ProceedToPaymentDiv{
+    display: none;
 }

@@ -1,11 +1,41 @@
-import {navbar} from "../component/navbar.js "
-import {footer} from "../component/footer.js"
+// import {navbar} from "../component/navbar.js "
+// import {footer} from "../component/footer.js"
 
-let navMain=document.getElementById("navMain")
-navMain.innerHTML=navbar()
+// let navMain=document.getElementById("navMain")
+// navMain.innerHTML=navbar()
 
-let footerMain=document.getElementById("footerMain")
-footerMain.innerHTML=footer()
+// let footerMain=document.getElementById("footerMain")
+// footerMain.innerHTML=footer()
+
+
+let ordershow = document.getElementById('displayBuyingProductDiv');
+let order_product = document.getElementById('viewTotalAmount');
+let total_detail = document.getElementById('viewTotalAmont_ProceedToPaymentDiv');
+let flag2 = false;
+ordershow.addEventListener('click',()=>{
+ 
+    if(flag2 == false){
+        order_product.style.display ="block"
+        total_detail.style.display = "flex";
+        flag2 = true;
+    }else{
+        order_product.style.display ="none"
+        total_detail.style.display = "none";
+        flag2 = false;
+    }
+
+
+
+
+
+})
+
+
+
+
+
+
+
 
 let cartArr=JSON.parse(localStorage.getItem("Cart"))||[]
 

@@ -1,11 +1,11 @@
-import {navbar} from "../component/navbar.js "
-import {footer} from "../component/footer.js"
+// import {navbar} from "../component/navbar.js "
+// import {footer} from "../component/footer.js"
 
-let navMain=document.getElementById("navMain")
-navMain.innerHTML=navbar()
+// let navMain=document.getElementById("navMain")
+// navMain.innerHTML=navbar()
 
-let footerMain=document.getElementById("footerMain")
-footerMain.innerHTML=footer()
+// let footerMain=document.getElementById("footerMain")
+// footerMain.innerHTML=footer()
 
 let cartArr=JSON.parse(localStorage.getItem("Cart"))||[]
 console.log(cartArr)
