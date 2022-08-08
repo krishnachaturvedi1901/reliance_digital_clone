@@ -46,7 +46,7 @@ function NEW_NAVTOP(){
 function main_navbaar(){
     return`<!-- logo and seach baar and cart and login -->
     <div id="nav_serchbaar_div">
-       <a href="#">
+       <a href="homePage.html">
          <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
        </a>
        <div id="main_serchbaar">

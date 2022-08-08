@@ -157,3 +157,7 @@ span {
     background-color: #fc6027;
     cursor: pointer;
 }
+#main_serchbaar .fa-solid {
+    position:absolute;
+    right: -15px;
+}

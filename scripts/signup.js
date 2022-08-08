@@ -98,13 +98,15 @@ const getData_and_saveToserver = (number)=>{
    let name = `${register_first_nameEliment.value} ${register_last_nameEliment.value}`
    let email = register_email_eliment.value;
    let city = register_city_nameEliment.value;
-   if(name!=""&&email!=""){
+   let add = document.getElementById("register_add_name").value;
+   if(name!=""&&email!=""&&add!=""){
      let obj = {
         name:name,
         email:email,
         mobile:number,
         city:city,
-        order:[]
+        order:[],
+        address:add
      }
      Go_otp_varification(obj);
    }

@@ -97,3 +97,110 @@ document.getElementById("lishtshowbaar").onclick = ()=>{
         localStorage.setItem("num",0);
     }
 }
+///login signup check
+const show_uersIn_nav = (user)=>{
+    let pincodeElimnet = document.getElementById("register_pincode");
+    pincodeElimnet.innerText = `Deliver to ${user.city}` 
+    let signup_login_On_naveliment = document.getElementById("signup_login_On_nav");
+    signup_login_On_naveliment.style.display = "none"
+    let home_page_user_name_textEliment = document.getElementById("home_page_user_name_text");
+    let home_page_user_name_eliment = document.getElementById("home_page_user_name");
+    home_page_user_name_eliment.style.display = "block"
+    home_page_user_name_textEliment.innerText = user.name
+}
+let loginData = JSON.parse(localStorage.getItem("usersData"))||{};
+if(loginData.name){
+    show_uersIn_nav(loginData);
+}else{
+    let signup_login_On_naveliment = document.getElementById("signup_login_On_nav");
+    signup_login_On_naveliment.style.display = "block"
+    let home_page_user_name_eliment = document.getElementById("home_page_user_name");
+    home_page_user_name_eliment.style.display = "none"
+}
+document.getElementById("nav_user_logout_button").addEventListener("click",()=>{
+    localStorage.setItem("usersData",JSON.stringify({}));
+    location.reload();
+})
+
+//cart item show function 
+
+const showCartDataOnNav = (cartData)=>{
+    if(cartData.length>0){
+        let carttotal = document.getElementById("nav_cart_item_total");
+        carttotal.innerText = cartData.length;
+        carttotal.style.display = "block";
+
+        let navcart = document.getElementById("nav_cart_item_show");
+        navcart.innerHTML = "";
+        cartData.forEach((element,index,arr) => {
+
+            //emage eliment
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = element.img1;
+
+            let nanmeh4 = document.createElement("h4");
+            nanmeh4.innerText = element.name
+            let priceelimet = document.createElement("h3");
+            priceelimet.innerText = `₹${element.dealprice}`
+            let quantity = document.createElement("h6");
+            quantity.innerText = `Qty : 1`
+            let button = document.createElement("button");
+            button.innerText = "Remove"
+            let imgDiv = document.createElement("div");
+            imgDiv.append(img);
+            let quantitydiv = document.createElement("div");
+            quantitydiv.className = "nav_div_third"
+            let removeButton = document.createElement("h6");
+            removeButton.append(button);
+            quantitydiv.append(quantity,removeButton);
+            let name_remove_buuton_div = document.createElement("div");
+            name_remove_buuton_div.append(nanmeh4,priceelimet,quantitydiv)
+            div.append(imgDiv,name_remove_buuton_div)
+            button.addEventListener("click",()=>{
+               removeItem_fromCart(element.id,arr);
+            })
+            navcart.append(div);
+        });
+  
+
+    }else{
+        let carttotal = document.getElementById("nav_cart_item_total");
+        carttotal.style.display = "none";
+    }
+}
+let cartData = JSON.parse(localStorage.getItem("Cart"))||[];
+showCartDataOnNav(cartData);
+
+document.getElementById("nav_cart_item").addEventListener("mouseenter",()=>{
+    let cartData = JSON.parse(localStorage.getItem("Cart"))||[];
+    if(cartData.length>0){
+        document.getElementById("nav_cart_div_first").style.display = "flex";
+    }
+})
+document.getElementById("nav_cart_item").addEventListener("mouseleave",()=>{
+    document.getElementById("nav_cart_div_first").style.display = "none";
+})
+
+const removeItem_fromCart=(index,arr)=>{
+      let splicedArr = arr.filter((ele)=>{
+        return index!=ele.id
+      })
+      localStorage.setItem("Cart",JSON.stringify(splicedArr));
+      showCartDataOnNav(splicedArr)
+}
+
+
+
+//search eliment 
+let sercheliment_param = document.getElementById("nav_input");
+const goto_serchParm = (e)=>{
+    let serch_value = sercheliment_param.value;
+    if(e.key=="Enter"){
+        if(serch_value=="lg"||serch_value=="Television"||serch_value=="samsung"||serch_value=="tcl"||serch_value=="tv"){
+            location.href= "televisionfilter.html";
+        }
+    }
+
+}
+sercheliment_param.addEventListener("keypress",goto_serchParm);

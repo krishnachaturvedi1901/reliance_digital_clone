@@ -16,9 +16,12 @@ const displyData = (user)=>{
     let user_email_DetailsEliment =document.getElementById("user_email_Details");
     let user_name_DetailsEliment = document.getElementById("user_name_Details");
     let user_city_Detailseliment = document.getElementById("user_city_Details");
+    let user_add_DetailsEliment = document.getElementById("user_add_Details");
     user_city_Detailseliment.innerText = `City : ${user.city}`
     user_email_DetailsEliment.innerText = `Email : ${user.email}`
     user_name_DetailsEliment.innerText = `Name : ${user.name}`
+    user_add_DetailsEliment.innerText = `Add. : ${user.address}`
+
     let user_name_profilePageEliment = document.getElementById("user_name_profilePage");
     user_name_profilePageEliment.innerText = user.name
     let user_email_profilepageEliment = document.getElementById("user_email_profilepage");

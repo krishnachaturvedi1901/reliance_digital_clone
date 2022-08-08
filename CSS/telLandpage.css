@@ -291,3 +291,7 @@ hr{
      padding: 5px 13px;
      font-weight: 500;
  }
+ #main_serchbaar .fa-solid {
+    position:absolute;
+    right: -15px;
+}
