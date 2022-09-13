@@ -4,8 +4,8 @@ This was our project for Unit-5 Construct week at Masai Shcool.
 Our target was to complete all main functionality of e-commerce website have, such as sing up to till to the byuing of a product.
 We have completed this project in 5 days.
 
-- <h3>Checkout our deployed project- [Click here]()</h3>
-- <h3>Checkout our project- [Blog]()</h3>
+- <h3>[Checkout our deployed project](https://reliancedigitalclone.netlify.app/pages/homepage)</h3>
+- <h3>[Checkout our projext blog](https://krishnachaturvedi.hashnode.dev/reliance-digital-website-clone)</h3>
 
 Reliance Digital is an Indian electronic products website and E-commerce platform for consumers involved in ordering online. Reliance Digital Retail is a chain of stores that sells consumer electronic appliances. Its products include audio and video devices, digital cameras, durables such as refrigerators, air conditioners, washing machines, microwave ovens, and water purifiers.
 
